@@ -27,10 +27,6 @@ body {
             font-weight: 600;
         }
 
-                h1 {
-                    
-                }
-
                     .a-titulo {
                         font-size: 3rem;
                         text-decoration: none;
@@ -40,6 +36,16 @@ body {
 
                     .a-titulo:hover {
                         color: #988181;
+                    }
+
+                    .change {
+                        display: none;
+                    }
+
+                    .icon-menu {
+                        display: none!important;
+                        font-size: 0.9rem;
+                        color: white;
                     }
 
         nav {
@@ -116,6 +122,7 @@ body {
                 height: 100%;
                 display: flex;
                 align-items: center;
+                justify-content: center;
             }
 
                 .img-experiencia {
@@ -131,6 +138,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                text-align: center;
             }
 
                 .h2-experiencia {
@@ -171,13 +179,130 @@ body {
         background-color: black;
     }
             
-        footer {
-            
-        }
-            
             .p-footer {
                 font-size: 1rem;
             }
+
+@media (max-width: 914px) {
+    header {
+        height: 10%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .ul-menu {
+        display: none;
+    }
+
+    .icon-menu {
+        display: inline-block!important;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .change:checked ~ .ul-menu {
+        display: inline-block!important;
+        position: relative;
+        margin: 0;
+        width: 100%;
+    }
+
+    .li-menu {
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+    }
+
+    .a-link {
+        font-size: 1.4rem;
+        color: black;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .a-link:hover {
+        color: #988181!important;
+    }
+
+    .a-titulo {
+        font-size: 1.2rem;
+    }
+
+    main {
+        flex-direction: column;
+        height: 85%;
+    }
+
+  .container-img-experiencia {
+    width: 40%;
+  }
+
+  .img-experiencia {
+    height: 50%;
+    width: 95%;
+  }
+
+  .container-info-experiencia {
+    width: 60%;
+    height: 100%;
+    padding: 0;
+  }
+
+.h2-experiencia {
+    font-size: 1rem;
+}
+
+.exp-1 {
+    height: 40%;
+}
+
+.exp-2 {
+    height: 60%;
+}
+
+  .dd-experiencia {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  .dt-experiencia {
+    font-size: 0.8rem;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+
+    .container-footer {
+        height: 5%;
+    }
+
+    .p-footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:510px) and (max-width: 914px) {
+    .a-titulo {
+        font-size: 1.7rem;
+    }
+
+    .p-footer {
+        font-size: 1rem;
+    }
+
+    .h2-experiencia {
+        font-size: 1.3rem;
+    }
+
+    .dt-experiencia {
+        font-size: 1rem;
+    }
+
+    .dd-experiencia {
+        font-size: 0.8rem;
+    }
+}
 
 
 
