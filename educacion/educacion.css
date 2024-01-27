@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'fuente';
-    src: url(../fuentes/ElMessiri-VariableFont_wght.ttf);
+    src: url(../fuentes/LeagueSpartan-VariableFont_wght.ttf);
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #161d19;
+    background-color: white;
     color: white;
 }
 
@@ -25,17 +25,18 @@ body {
             justify-content: center;
             align-items: center;
             font-weight: 600;
+            background-color: #335384;
         }
 
                     .a-titulo {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         text-decoration: none;
-                        color: white;
                         padding: 1rem;
+                        color: white;
                     }
 
                     .a-titulo:hover {
-                        color: #988181;
+                        color: #6589BF;
                     }
 
                     .change {
@@ -52,7 +53,7 @@ body {
             width: 100%;
             height: 30%;
             display: flex;
-            background-color: black;
+            background-color: #6589BF;
         }
 
             .ul-menu {
@@ -87,86 +88,84 @@ body {
                     }
 
                     .a-link:hover {               
-                        color: black;
-                        background-color: #988181;
+                        color: white;
+                        background-color: #335384;
                         animation-name: animacion-menu;
                         animation-duration: 3s;
                         animation-iteration-count: infinite;
                         animation-direction: alternate;
                         animation-delay: 0s;
-                        animation-fill-mode: forwards;
+                        animation-fill-mode: both;
                         box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
 -webkit-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
 -moz-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
                     }
                     
     main {
-        width: 90%;
+        width: 100%;
         height: 70%;
-        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: white;
     }
 
         .container-educacion {
             width: 100%;
-            height: 33%;
             display: flex;
             justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
             .container-img-educacion {
-                width: 30%;
+                width: 25%;
                 height: 100%;
                 display: flex;
                 align-items: center;
+                justify-content: center;
             }
 
                 .img-educacion {
-                    width: 100%;
-                    height: 80%;
-                    border-radius: 50px;
+                    width: 12rem;
+                    height: 7rem;
                 }
 
             .container-info-educacion {
                 width: 70%;
                 height: 100%;
-                padding: 0 2rem 0 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                text-align: center;
+            }
+            
+            .impar{
+                text-align: start;
             }
 
+            .par {
+                text-align: end;
+            }
+
+                .p-educacion, .h2-educacion {
+                    margin: 3px 0px 3px 0px;
+                    color: #335384;
+                }
+
+                .titulacion{
+                    font-weight: bold;
+                }
+
                 .h2-educacion {
-                    text-decoration: underline;
                     margin: 0;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
+                    color: #335384;
                 }
 
                 .h2-educacion:hover {
-                    color: #988181;
+                    color: #6589BF;
                 }
-
-                    .dl-educacion {
-                        margin: 0;
-                    }
-
-                        .dt-educacion {
-                            font-size: 1.1rem;
-                            font-weight: 600;
-                        }
-
-                        .dt-educacion:hover {
-                            text-decoration: underline;
-                            color: #988181;
-                        }
-
-                         .dd-educacion {
-                            font-size: 0.9rem;
-                         }
 
     .container-footer {
         width: 100%;
@@ -175,111 +174,10 @@ body {
         justify-content: center;
         align-items: center;
         margin: auto;
-        background-color: black;
+        background-color: #335384;
     }
             
             .p-footer {
                 font-size: 1rem;
+                color: white;
             }
-
-@media (max-width: 914px) {
-    header {
-        height: 10%;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .ul-menu {
-        display: none;
-    }
-
-    .icon-menu {
-        display: inline-block!important;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .change:checked ~ .ul-menu {
-        display: inline-block!important;
-        position: relative;
-        margin: 0;
-        width: 100%;
-    }
-
-    .li-menu {
-        width: 100%;
-        text-align: center;
-        background-color: grey;
-    }
-
-    .a-link {
-        font-size: 1.4rem;
-        color: black;
-        font-weight: 600;
-        padding: 0;
-    }
-
-    .a-link:hover {
-        color: #988181!important;
-    }
-
-    .a-titulo {
-        font-size: 1.2rem;
-    }
-
-    main {
-        flex-direction: column;
-        height: 85%;
-    }
-
-    .container-educacion {
-        width: 100%;
-    }
-
-    .container-img-educacion {
-        width: 50%;
-    }
-
-    .img-educacion {
-        width: 95%;
-    }
-
-    .container-info-educacion {
-        padding: 0;
-        width: 50%;
-    }
-
-    .h2-educacion {
-        font-size: 1.2rem;
-    }
-
-    .dt-educacion {
-        font-size: 0.9rem;
-        font-weight: 300;
-        text-decoration: underline;
-    }
-
-    .dd-educacion {
-        margin: 0;
-    }
-
-    .container-footer {
-        height: 5%;
-    }
-
-    .p-footer {
-        font-size: 0.7rem;
-    }
-}
-
-@media (min-width:510px) and (max-width: 914px) {
-    .a-titulo {
-        font-size: 1.7rem;
-    }
-
-    .p-footer {
-        font-size: 1rem;
-    }
-}

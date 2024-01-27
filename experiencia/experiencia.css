@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'fuente';
-    src: url(../fuentes/ElMessiri-VariableFont_wght.ttf);
+    src: url(../fuentes/LeagueSpartan-VariableFont_wght.ttf);
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #161d19;
+    background-color: white;
     color: white;
 }
 
@@ -25,17 +25,18 @@ body {
             justify-content: center;
             align-items: center;
             font-weight: 600;
+            background-color: #335384;
         }
 
                     .a-titulo {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         text-decoration: none;
-                        color: white;
                         padding: 1rem;
+                        color: white;
                     }
 
                     .a-titulo:hover {
-                        color: #988181;
+                        color: #6589BF;
                     }
 
                     .change {
@@ -52,7 +53,7 @@ body {
             width: 100%;
             height: 30%;
             display: flex;
-            background-color: black;
+            background-color: #6589BF;
         }
 
             .ul-menu {
@@ -87,38 +88,39 @@ body {
                     }
 
                     .a-link:hover {               
-                        color: black;
-                        background-color: #988181;
+                        color: white;
+                        background-color: #335384;
                         animation-name: animacion-menu;
                         animation-duration: 3s;
                         animation-iteration-count: infinite;
                         animation-direction: alternate;
                         animation-delay: 0s;
-                        animation-fill-mode: forwards;
+                        animation-fill-mode: both;
                         box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
 -webkit-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
 -moz-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
                     }
                     
     main {
-        width: 90%;
+        width: 100%;
         height: 70%;
-        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: white;
     }
 
         .container-experiencia {
             width: 100%;
-            height: 50%;
             display: flex;
             justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
             .container-img-experiencia {
-                width: 20%;
+                width: 25%;
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -126,48 +128,44 @@ body {
             }
 
                 .img-experiencia {
-                    width: 100%;
-                    height: 80%;
-                    border-radius: 50px;
+                    width: 12rem;
+                    height: 7rem;
                 }
 
             .container-info-experiencia {
-                width: 60%;
+                width: 70%;
                 height: 100%;
-                padding: 0 2rem 0 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                text-align: center;
+            }
+            
+            .impar {
+                text-align: start;
             }
 
+            .par {
+                text-align: end;
+            }
+
+                .p-experiencia, .h2-experiencia {
+                    margin: 3px 0px 3px 0px;
+                    color: #335384;
+                }
+
+                .puesto{
+                    font-weight: bold;
+                }
+
                 .h2-experiencia {
-                    text-decoration: underline;
                     margin: 0;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
+                    color: #335384;
                 }
 
                 .h2-experiencia:hover {
-                    color: #988181;
+                    color: #6589BF;
                 }
-
-                .dl-experiencia {
-                    margin: 0;
-                }
-
-                    .dt-experiencia {
-                        font-size: 1.1rem;
-                        font-weight: 600;
-                    }
-
-                    .dt-experiencia:hover {
-                        text-decoration: underline;
-                        color: #988181;
-                    }
-
-                        .dd-experiencia {
-                            font-size: 0.9rem;
-                        }
 
     .container-footer {
         width: 100%;
@@ -176,11 +174,12 @@ body {
         justify-content: center;
         align-items: center;
         margin: auto;
-        background-color: black;
+        background-color: #335384;
     }
             
             .p-footer {
                 font-size: 1rem;
+                color: white;
             }
 
 @media (max-width: 914px) {
@@ -236,42 +235,27 @@ body {
     }
 
   .container-img-experiencia {
-    width: 40%;
+    width: 30%;
   }
 
   .img-experiencia {
-    height: 50%;
-    width: 95%;
+    height: 5rem;
+    width: 10rem;
   }
 
   .container-info-experiencia {
-    width: 60%;
+    width: 30%;
     height: 100%;
     padding: 0;
+  }
+
+  .p-experiencia {
+    margin: 0;
   }
 
 .h2-experiencia {
     font-size: 1rem;
 }
-
-.exp-1 {
-    height: 40%;
-}
-
-.exp-2 {
-    height: 60%;
-}
-
-  .dd-experiencia {
-    margin: 0;
-    font-size: 0.7rem;
-  }
-
-  .dt-experiencia {
-    font-size: 0.8rem;
-    font-weight: 200;
-    text-decoration: underline;
-  }
 
     .container-footer {
         height: 5%;
@@ -303,6 +287,20 @@ body {
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 370px) {
+    .container-img-experiencia {
+        display: none;
+      }
+
+    .container-info-experiencia {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+}
+
+
 
 
 

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'fuente';
-    src: url(../fuentes/ElMessiri-VariableFont_wght.ttf);
+    src: url(../fuentes/LeagueSpartan-VariableFont_wght.ttf);
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #161d19;
+    background-color: white;
     color: white;
 }
 
@@ -25,17 +25,18 @@ body {
             justify-content: center;
             align-items: center;
             font-weight: 600;
+            background-color: #335384;
         }
 
                     .a-titulo {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         text-decoration: none;
-                        color: white;
                         padding: 1rem;
+                        color: white;
                     }
 
                     .a-titulo:hover {
-                        color: #988181;
+                        color: #6589BF;
                     }
 
                     .change {
@@ -52,7 +53,7 @@ body {
             width: 100%;
             height: 30%;
             display: flex;
-            background-color: black;
+            background-color: #6589BF;
         }
 
             .ul-menu {
@@ -87,14 +88,14 @@ body {
                     }
 
                     .a-link:hover {               
-                        color: black;
-                        background-color: #988181;
+                        color: white;
+                        background-color: #335384;
                         animation-name: animacion-menu;
                         animation-duration: 3s;
                         animation-iteration-count: infinite;
                         animation-direction: alternate;
                         animation-delay: 0s;
-                        animation-fill-mode: forwards;
+                        animation-fill-mode: both;
                         box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
 -webkit-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
 -moz-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
@@ -103,38 +104,43 @@ body {
     main {
         width: 100%;
         height: 70%;
-        margin: auto;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
     }
 
-            .container-datos {
-                width: 100%;
+        .container-cursos {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+            .container-info-cursos {
+                width: 70%;
                 height: 100%;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
-                align-items: center;
             }
 
-                .ul-contacto {
-                    padding: 0;
-                    margin-left: 2rem;
-                    text-align: center;
+                .p-cursos, .h2-cursos {
+                    margin: 3px 0px 3px 0px;
+                    color: #335384;
                 }
 
-                    .li-contacto {
-                        list-style: none;
-                        margin-bottom: 1rem;
-                    }
+                .h2-cursos {
+                    font-size: 1rem;
+                    color: #335384;
+                }
 
-                        .a-contacto {
-                            text-decoration: none;
-                            color: white;
-                            font-size: 1.6rem;
-                        }
-
-                            i {
-                                margin-right: 1rem;
-                            }
+                .h2-cursos:hover {
+                    color: #6589BF;
+                }
 
     .container-footer {
         width: 100%;
@@ -143,100 +149,10 @@ body {
         justify-content: center;
         align-items: center;
         margin: auto;
-        background-color: black;
+        background-color: #335384;
     }
             
             .p-footer {
                 font-size: 1rem;
+                color: white;
             }
-
-@media (max-width: 914px) {
-    header {
-        height: 10%;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .ul-menu {
-        display: none;
-    }
-
-    .icon-menu {
-        display: inline-block!important;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .change:checked ~ .ul-menu {
-        display: inline-block!important;
-        position: relative;
-        margin: 0;
-        width: 100%;
-    }
-
-    .li-menu {
-        width: 100%;
-        text-align: center;
-        background-color: grey;
-    }
-
-    .a-link {
-        font-size: 1.4rem;
-        color: black;
-        font-weight: 600;
-        padding: 0;
-    }
-
-    .a-link:hover {
-        color: #988181!important;
-    }
-
-    .a-titulo {
-        font-size: 1.2rem;
-    }
-
-    main {
-        flex-direction: column;
-        height: 85%;
-    }
-
-    .ul-contacto {
-        margin: 0;
-    }
-
-    .a-contacto {
-        font-size: 0.9rem;
-    }
-
-    i {
-        margin-right: 5px;
-    }
-
-    .container-footer {
-        height: 5%;
-    }
-
-    .p-footer {
-        font-size: 0.7rem;
-    }
-}
-
-@media (min-width:510px) and (max-width: 914px) {
-    .a-titulo {
-        font-size: 1.7rem;
-    }
-
-    .a-contacto {
-        font-size: 1.3rem;
-    }
-
-    .p-footer {
-        font-size: 1rem;
-    }
-}
-
-
-
-    

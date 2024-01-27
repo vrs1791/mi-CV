@@ -1,159 +1,220 @@
-@font-face {
-    font-family: 'fuente';
-    src: url(fuentes/ElMessiri-VariableFont_wght.ttf);
-}
-
-body {
-    font-family: "fuente";
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #161d19;
-    color: white;
-}
-
-    header {
-        width: 100%;
-        height: 20%;
-    }
-
-        .container-titulo {
-            width: 100%;
-            height: 70%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 600;
-        }
-
-                    .a-titulo {
-                        font-size: 3rem;
-                        text-decoration: none;
-                        color: white;
-                        padding: 1rem;
-                    }
-
-                    .a-titulo:hover {
-                        color: #988181;
-                    }
-
-        .change {
-            display: none;
-        }
-
-        .icon-menu {
-            display: none!important;
-            font-size: 0.9rem;
-            color: white;
-        }
-
-        nav {
-            width: 100%;
-            height: 30%;
-            display: flex;
-            background-color: black;
-        }
-
-            .ul-menu {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                padding: 0px;
+ @font-face {
+                font-family: 'fuente';
+                src: url(fuentes/LeagueSpartan-VariableFont_wght.ttf);
             }
-
-                .li-menu {
-                    list-style: none;
+            
+            body {
+                font-family: "fuente";
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                color: white;
+            }
+            
+                header {
+                    width: 100%;
+                    height: 20%;
+                }
+            
+                    .container-titulo {
+                        width: 100%;
+                        height: 70%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 600;
+                        background-color: #335384;
+                    }
+            
+                                .a-titulo {
+                                    font-size: 2.5rem;
+                                    text-decoration: none;
+                                    padding: 1rem;
+                                    color: white;
+                                }
+            
+                                .a-titulo:hover {
+                                    color: #6589BF;
+                                }
+            
+                                .change {
+                                    display: none;
+                                }
+            
+                                .icon-menu {
+                                    display: none!important;
+                                    font-size: 0.9rem;
+                                    color: white;
+                                }
+            
+                    nav {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        background-color: #6589BF;
+                    }
+            
+                        .ul-menu {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            padding: 0px;
+                        }
+            
+                            .li-menu {
+                                list-style: none;
+                            }
+            
+                                @keyframes animacion-menu {
+                                    0% {
+                                        border-radius: 20px;
+                                    }
+            
+                                    100% {
+                                        border-radius: 100%;
+                                    }
+                                }
+            
+                                .a-link {
+                                    font-size: 0.9rem;
+                                    text-decoration: none;
+                                    padding: 1rem;
+                                    color: white;
+            
+                                }
+            
+                                .a-link:hover {               
+                                    color: white;
+                                    background-color: #335384;
+                                    animation-name: animacion-menu;
+                                    animation-duration: 3s;
+                                    animation-iteration-count: infinite;
+                                    animation-direction: alternate;
+                                    animation-delay: 0s;
+                                    animation-fill-mode: both;
+                                    box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
+            -webkit-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
+            -moz-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
+                                }
+                                
+                main {
+                    width: 100%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
                 }
 
-                    @keyframes animacion-menu {
-                        0% {
-                            border-radius: 20px;
+                .container-img-perfil {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .img-perfil {
+                        width: 9rem;
+                        height: 10rem;
+                        border-radius: 10px;
+                    }
+
+                .container-datos {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+                    .ul-contacto {
+                        padding: 0;
+                        text-align: center;
+                    }
+    
+                        .li-contacto {
+                            list-style: none;
+                            margin-bottom: 1rem;
+                        }
+    
+                            .a-contacto {
+                                text-decoration: none;
+                                color: #335384;
+                                font-size: 1.2rem;
+                            }
+    
+                                i {
+                                    margin-right: 1rem;
+                                }
+            
+                .container-footer {
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    background-color: #335384;
+                }
+                        
+                        .p-footer {
+                            font-size: 1rem;
+                            color: white;
                         }
 
-                        100% {
-                            border-radius: 100%;
-                        }
-                    }
 
-                    .a-link {
-                        font-size: 0.9rem;
-                        text-decoration: none;
-                        padding: 1rem;
-                        color: white;
 
-                    }
 
-                    .a-link:hover {               
-                        color: black;
-                        background-color: #988181;
-                        animation-name: animacion-menu;
-                        animation-duration: 3s;
-                        animation-iteration-count: infinite;
-                        animation-direction: alternate;
-                        animation-delay: 0s;
-                        animation-fill-mode: forwards;
-                        box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
--webkit-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
--moz-box-shadow: 0px 0px 24px 26px rgba(0,0,0,0.42);
-                    }
-                    
-    main {
-        width: 90%;
-        height: 70%;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    }
 
-        .container-img-perfil {
-            width: 35%;
-            height: 90%;
-        }
 
-            .img-perfil {
-                width: 100%;
-                height: 100%;
-                border-radius: 50px;
-            }
 
-        .container-info-principal {
-            width: 65%;
-            height: 90%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-left: 3rem;
-        }
 
-                .h2-info-principal {
-                    font-size: 3rem;
-                    margin: 0;
-                }
 
-                .p-info-principal {
-                    font-size: 1.1rem;
-                    margin: 0;
-                }
 
-    .container-footer {
-        width: 100%;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        background-color: black;
-    }
 
-            .p-footer {
-                font-size: 1rem;
-            }
 
-@media (max-width: 510px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 914px) {
     header {
         height: 10%;
     }
@@ -205,43 +266,16 @@ body {
         height: 85%;
     }
 
-    .container-img-perfil {
-        width: 100%;
-        height:30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .ul-contacto {
+        margin: 0;
     }
 
-    .img-perfil {
-        width: 80%;
-        height: 90%;
-        border-radius: 1rem;
-        max-width: fit-content;
+    .a-contacto {
+        font-size: 0.9rem;
     }
 
-    .container-info-principal {
-        width: 100%;
-        height: 80%;
-        padding: 0;
-    }
-
-    .section-info-principal {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .h2-info-principal {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .p-info-principal {
-        text-align: center;
-        font-size: 0.78rem;
+    i {
+        margin-right: 5px;
     }
 
     .container-footer {
@@ -254,102 +288,19 @@ body {
 }
 
 @media (min-width:510px) and (max-width: 914px) {
-    header {
-        height: 10%;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .ul-menu {
-        display: none;
-    }
-
-    .icon-menu {
-        display: inline-block!important;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .change:checked ~ .ul-menu {
-        display: inline-block!important;
-        position: relative;
-        margin: 0;
-        width: 100%;
-    }
-
-    .li-menu {
-        width: 100%;
-        text-align: center;
-        background-color: grey;
-    }
-
-    .a-link {
-        font-size: 1.4rem;
-        color: black;
-        font-weight: 600;
-        padding: 0;
-    }
-
-    .a-link:hover {
-        color: #988181!important;
-    }
-
     .a-titulo {
         font-size: 1.7rem;
     }
 
-    main {
-        flex-direction: column;
-        height: 85%;
-    }
-
-    .container-img-perfil {
-        width: 100%;
-        height: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .img-perfil {
-        width: 30%;
-        height: 90%;
-        border-radius: 1rem;
-    }
-
-    .container-info-principal {
-        width: 100%;
-        height: 70%;
-        padding: 0;
-    }
-
-    .section-info-principal {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .h2-info-principal {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .p-info-principal {
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .container-footer {
-        height: 5%;
+    .a-contacto {
+        font-size: 1.3rem;
     }
 
     .p-footer {
         font-size: 1rem;
     }
 }
+
+
 
     
