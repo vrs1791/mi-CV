@@ -258,7 +258,7 @@
     }
 
     .container-img-idiomas {
-        width: 40%;
+        width: 50%;
         display: flex;
     }
 
@@ -269,7 +269,7 @@
     }
 
     .container-info-idiomas {
-        width: 60%;
+        width: 50%;
     }
 
     .h2-idiomas {
@@ -303,8 +303,8 @@
     }
 
     .img-idiomas {
-        width: 7rem;
-        height: 5rem;
+        width: 9rem;
+        height: 7rem;
     }
 
     .p-footer {

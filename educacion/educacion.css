@@ -300,6 +300,11 @@ body {
                 .container-info-educacion {
                     width: 50%;
                 }
+
+                .img-educacion {
+                    width: 9rem;
+                    height: 7rem;
+                }
             
                 .p-footer {
                     font-size: 1rem;
