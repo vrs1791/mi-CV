@@ -42,6 +42,12 @@
                                 .change {
                                     display: none;
                                 }
+
+                                .burger-menu {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
             
                                 .icon-menu {
                                     display: none!important;
@@ -167,9 +173,6 @@
 
 
                         @media (max-width: 914px) {
-                            header {
-                                height: 15%;
-                            }
                         
                             nav {
                                 flex-wrap: wrap;
@@ -238,7 +241,7 @@
                             }
 
                             .a-contacto {
-                                font-size: 0.9rem;
+                                font-size: 1.1rem;
                             }
                         
                             .p-footer {

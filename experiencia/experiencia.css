@@ -43,6 +43,12 @@ body {
                         display: none;
                     }
 
+                    .burger-menu {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                     .icon-menu {
                         display: none!important;
                         font-size: 0.9rem;
@@ -193,10 +199,7 @@ body {
             }
 
             @media (max-width: 914px) {
-                header {
-                    height: 15%;
-                }
-            
+
                 nav {
                     flex-wrap: wrap;
                 }
@@ -254,7 +257,7 @@ body {
                 }
             
                 .container-img-experiencia {
-                    width: 40%;
+                    width: 30%;
                     display: flex;
                 }
             
@@ -266,7 +269,7 @@ body {
                 }
             
                 .container-info-experiencia {
-                    width: 60%;
+                    width: 70%;
                 }
             
                 .h2-experiencia {
@@ -274,7 +277,7 @@ body {
                 }
             
                 .p-experiencia {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                 }
             
                 .p-footer {
@@ -291,13 +294,22 @@ body {
                     font-size: 0.8rem;
                 }
 
+                .container-experiencia {
+                    margin: 3px;
+                }
+
                 .container-img-experiencia {
                     display: none;
                 }
 
                 .container-info-experiencia {
-                    width: 80%;
+                    width: 95%;
                     text-align: center;
+                    margin: 3px;
+                }
+
+                .h2-experiencia {
+                    font-size: 1.3rem;
                 }
             
                 .p-footer {

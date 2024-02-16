@@ -43,6 +43,12 @@ body {
                         display: none;
                     }
 
+                    .burger-menu {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                     .icon-menu {
                         display: none!important;
                         font-size: 0.9rem;
@@ -193,10 +199,7 @@ body {
             }
 
             @media (max-width: 914px) {
-                header {
-                    height: 15%;
-                }
-            
+
                 nav {
                     flex-wrap: wrap;
                 }
@@ -259,7 +262,7 @@ body {
                 }
             
                 .img-educacion {
-                    width: 9rem;
+                    width: 11rem;
                     height: 7rem;
                     margin: 0;
                 }
@@ -273,7 +276,7 @@ body {
                 }
             
                 .p-educacion {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                 }
             
                 .p-footer {
