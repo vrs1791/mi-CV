@@ -115,8 +115,8 @@ body {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
             .container-img-educacion {
@@ -130,6 +130,16 @@ body {
                 .img-educacion {
                     width: 12rem;
                     height: 7rem;
+                }
+
+                .img-impar {
+                    justify-content: flex-end;
+                    margin-right: 10px;
+                }
+            
+                .img-par {
+                    justify-content: flex-start;
+                    margin-left: 10px;
                 }
 
             .container-info-educacion {
@@ -181,3 +191,119 @@ body {
                 font-size: 1rem;
                 color: white;
             }
+
+            @media (max-width: 914px) {
+                header {
+                    height: 15%;
+                }
+            
+                nav {
+                    flex-wrap: wrap;
+                }
+            
+                .container-menu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .ul-menu {
+                    display: none;
+                }
+            
+                .icon-menu {
+                    display: inline-block!important;
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                }
+            
+                .change:checked ~ .ul-menu {
+                    display: inline-block!important;
+                    position: relative;
+                    margin: 0;
+                    width: 100%;
+                }
+            
+                .li-menu {
+                    width: 100%;
+                    text-align: center;
+                    background-color: grey;
+                }
+            
+                .a-link {
+                    font-size: 1.4rem;
+                    color: black;
+                    font-weight: 600;
+                    padding: 0;
+                }
+            
+                .a-link:hover {
+                    color: #988181!important;
+                }
+            
+                .a-titulo {
+                    font-size: 1.7rem;
+                }
+            
+                main {
+                    flex-direction: column;
+                }
+            
+                .container-educacion {
+                    display: flex;
+                }
+            
+                .container-img-educacion {
+                    width: 40%;
+                    display: flex;
+                }
+            
+                .img-educacion {
+                    width: 9rem;
+                    height: 7rem;
+                    margin: 0;
+                }
+            
+                .container-info-educacion {
+                    width: 60%;
+                }
+            
+                .h2-educacion {
+                    font-size: 1rem;
+                }
+            
+                .p-educacion {
+                    font-size: 0.8rem;
+                }
+            
+                .p-footer {
+                    font-size: 1rem;
+                }
+            }
+            
+            @media (max-width: 510px) {
+                .a-titulo {
+                    font-size: 1.3rem;
+                }
+            
+                .hab {
+                    font-size: 0.8rem;
+                }
+
+                .container-img-educacion {
+                    width: 50%;
+                }
+
+                .container-info-educacion {
+                    width: 50%;
+                }
+            
+                .p-footer {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            
+            
+                        
+                            

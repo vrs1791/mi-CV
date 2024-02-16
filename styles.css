@@ -166,8 +166,89 @@
                         }
 
 
+                        @media (max-width: 914px) {
+                            header {
+                                height: 15%;
+                            }
+                        
+                            nav {
+                                flex-wrap: wrap;
+                            }
+                        
+                            .container-menu {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        
+                            .ul-menu {
+                                display: none;
+                            }
+                        
+                            .icon-menu {
+                                display: inline-block!important;
+                                font-size: 1.5rem;
+                                margin-left: 1rem;
+                            }
+                        
+                            .change:checked ~ .ul-menu {
+                                display: inline-block!important;
+                                position: relative;
+                                margin: 0;
+                                width: 100%;
+                            }
+                        
+                            .li-menu {
+                                width: 100%;
+                                text-align: center;
+                                background-color: grey;
+                            }
+                        
+                            .a-link {
+                                font-size: 1.4rem;
+                                color: black;
+                                font-weight: 600;
+                                padding: 0;
+                            }
+                        
+                            .a-link:hover {
+                                color: #988181!important;
+                            }
+                        
+                            .a-titulo {
+                                font-size: 1.7rem;
+                            }
+                        
+                            main {
+                                flex-direction: column;
+                            }
+                        
+                            .p-footer {
+                                font-size: 1rem;
+                            }
+                        }
+                        
+                        @media (max-width: 510px) {
+                            .a-titulo {
+                                font-size: 1.3rem;
+                            }
 
+                            .li-contacto {
+                                margin-bottom: 0.5rem; 
+                            }
 
+                            .a-contacto {
+                                font-size: 0.9rem;
+                            }
+                        
+                            .p-footer {
+                                font-size: 1rem;
+                                text-align: center;
+                            }
+                        }
+                        
+                        
+                                    
 
 
 
@@ -213,94 +294,3 @@
 
 
 
-
-@media (max-width: 914px) {
-    header {
-        height: 10%;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .ul-menu {
-        display: none;
-    }
-
-    .icon-menu {
-        display: inline-block!important;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .change:checked ~ .ul-menu {
-        display: inline-block!important;
-        position: relative;
-        margin: 0;
-        width: 100%;
-    }
-
-    .li-menu {
-        width: 100%;
-        text-align: center;
-        background-color: grey;
-    }
-
-    .a-link {
-        font-size: 1.4rem;
-        color: black;
-        font-weight: 600;
-        padding: 0;
-    }
-
-    .a-link:hover {
-        color: #988181!important;
-    }
-
-    .a-titulo {
-        font-size: 1.2rem;
-    }
-
-    main {
-        flex-direction: column;
-        height: 85%;
-    }
-
-    .ul-contacto {
-        margin: 0;
-    }
-
-    .a-contacto {
-        font-size: 0.9rem;
-    }
-
-    i {
-        margin-right: 5px;
-    }
-
-    .container-footer {
-        height: 5%;
-    }
-
-    .p-footer {
-        font-size: 0.7rem;
-    }
-}
-
-@media (min-width:510px) and (max-width: 914px) {
-    .a-titulo {
-        font-size: 1.7rem;
-    }
-
-    .a-contacto {
-        font-size: 1.3rem;
-    }
-
-    .p-footer {
-        font-size: 1rem;
-    }
-}
-
-
-
-    
